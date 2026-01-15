@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
-import { generateWorkoutAdvice, getNearbyHubs } from '../services/geminiService';
-import { Message } from '../types';
+import { generateWorkoutAdvice, getNearbyHubs } from '../services/geminiService.ts';
+import { Message } from '../types.ts';
 
 interface AIAssistantProps {
   isOpen: boolean;

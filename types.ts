@@ -17,9 +17,10 @@ export interface Program {
   title: string;
   subtitle: string;
   icon: string;
+  description: string;
+  highlights: string[];
 }
 
-// Added Message interface to fix missing export errors
 export interface Message {
   role: 'user' | 'model';
   content: string;

@@ -3,9 +3,10 @@ import React from 'react';
 
 interface HeroProps {
   onJoinClick: () => void;
+  onExploreClick: () => void;
 }
 
-const Hero: React.FC<HeroProps> = ({ onJoinClick }) => {
+const Hero: React.FC<HeroProps> = ({ onJoinClick, onExploreClick }) => {
   return (
     <section className="relative min-h-screen flex flex-col justify-center items-center pt-24 px-6 overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -41,7 +42,10 @@ const Hero: React.FC<HeroProps> = ({ onJoinClick }) => {
           >
             JOIN THE ELITE
           </button>
-          <button className="border border-white/20 glass py-6 px-8 rounded-2xl font-bold hover:bg-white/10 transition-all text-base tracking-widest uppercase">
+          <button 
+            onClick={onExploreClick}
+            className="border border-white/20 glass py-6 px-8 rounded-2xl font-bold hover:bg-white/10 transition-all text-base tracking-widest uppercase"
+          >
             EXPLORE PROGRAMS
           </button>
         </div>
