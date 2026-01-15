@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { PricingTier } from '../types';
+import { PricingTier } from '../types.ts';
 
 const tiers: PricingTier[] = [
   {

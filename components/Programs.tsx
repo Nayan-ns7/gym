@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Program } from '../types';
+import { Program } from '../types.ts';
 
 const programs: Program[] = [
   { 

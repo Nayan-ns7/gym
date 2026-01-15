@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Coach } from '../types';
+import { Coach } from '../types.ts';
 
 const coaches: Coach[] = [
   { 

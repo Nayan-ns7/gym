@@ -12,7 +12,7 @@ const About: React.FC = () => {
             <span className="text-xs font-black tracking-[0.5em] text-primary uppercase">About the Collective</span>
           </div>
           <h2 className="text-5xl font-black leading-[0.9] tracking-tighter italic uppercase">
-            A SANCTUARY<br/>FOR <span class="text-stroke">CHAMPIONS</span>
+            A SANCTUARY<br/>FOR <span className="text-stroke">CHAMPIONS</span>
           </h2>
           <p className="text-gray-400 text-lg leading-relaxed font-light">
             Founded on the principles of relentless progression, Neon Gym is more than a facility—it's an ecosystem designed for high-impact transformation. We curate every detail, from biometric lighting to Olympic-standard equipment, ensuring your environment matches your ambition.
