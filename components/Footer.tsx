@@ -2,6 +2,8 @@
 import React from 'react';
 
 const Footer: React.FC = () => {
+  const phoneNumber = "9906246681";
+
   return (
     <footer className="bg-black py-24 px-8 border-t border-white/5">
       <div className="flex flex-col items-center text-center gap-16 max-w-lg mx-auto">
@@ -11,6 +13,19 @@ const Footer: React.FC = () => {
           <p className="text-gray-500 text-[10px] tracking-[0.4em] max-w-[280px] uppercase font-black leading-relaxed">
             Defining the new era of high-performance human potential.
           </p>
+        </div>
+
+        {/* Contact Details */}
+        <div className="space-y-4">
+          <h4 className="text-[10px] font-black tracking-[0.5em] text-primary uppercase">Direct Access</h4>
+          <a 
+            href={`tel:${phoneNumber}`} 
+            className="flex items-center justify-center gap-3 glass px-8 py-4 rounded-2xl border-primary/20 hover:border-primary transition-all group"
+          >
+            <span className="material-symbols-outlined text-primary group-hover:animate-bounce">call</span>
+            <span className="text-xl font-black tracking-tighter">+{phoneNumber}</span>
+          </a>
+          <p className="text-[9px] text-gray-600 font-bold tracking-widest uppercase">Available 24/7 for Elite Support</p>
         </div>
         
         <div className="grid grid-cols-2 gap-x-20 gap-y-8 text-[11px] font-black tracking-[0.4em] text-gray-400 uppercase">

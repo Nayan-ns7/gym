@@ -8,6 +8,7 @@ import Coaches from './components/Coaches.tsx';
 import Pricing from './components/Pricing.tsx';
 import Testimonials from './components/Testimonials.tsx';
 import Footer from './components/Footer.tsx';
+import LowerBottom from './components/LowerBottom.tsx';
 
 const App: React.FC = () => {
   const scrollToPricing = () => {
@@ -25,7 +26,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="relative min-h-screen bg-background-dark">
+    <div className="relative min-h-screen bg-background-dark pb-24 md:pb-0">
       <Navbar />
       
       <main>
@@ -41,11 +42,11 @@ const App: React.FC = () => {
       </main>
 
       <Footer />
-
-      {/* Persistent Bottom Bar (Decorative) */}
-      <div className="fixed bottom-0 left-0 right-0 h-[3px] bg-white/5 z-[200]">
-        <div className="h-full bg-primary shadow-neon w-[45%] mx-auto rounded-t-full transition-all"></div>
-      </div>
+      
+      <LowerBottom 
+        onProgramsClick={scrollToPrograms}
+        onPricingClick={scrollToPricing}
+      />
     </div>
   );
 };
